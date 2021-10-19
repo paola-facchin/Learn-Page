@@ -1,0 +1,380 @@
+/*Parte de cima*/
+header{
+    background: rgb(66, 62, 62);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 50px rgb(24, 22, 22);
+}
+.logo{
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0rem 1rem;
+    justify-content: space-between;
+}
+/* Personalização da barra de rolagem */
+::-webkit-scrollbar{
+    background-color: rgb(66, 62, 62);
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(66, 62, 62);
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 4px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 23px;   
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+nav a:hover{
+    color: #5e55ae;
+    text-decoration: underline;
+}
+/*Parte onde mostra */
+.sobre{
+    padding: 27px 0;
+    background:rgb(196, 194, 194);
+}
+.Nome-Home {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgb(196, 194, 194), white, white);
+}
+.Nome-Home2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    padding: 50px 0;
+    background-color:rgb(107, 104, 104) ;
+    font-family: 'Montserrat', sans-serif;
+}
+.Nome-Home3{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    padding: 50px 0;
+    background-color: rgb(196, 194, 194);
+    font-family: 'Montserrat', sans-serif;    
+}
+.Nome-Home4{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    padding: 50px 0;
+    background: linear-gradient(rgb(107,104,104), white, white);
+    font-family: 'Montserrat', sans-serif;    
+}
+
+.texto{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 0px 50px;
+}
+.texto strong{
+    font-weight: bold;
+}
+
+.Portfolio {
+    display: flex;
+    justify-content: center;
+    margin: 0  auto;
+    padding: 40px 0;
+    gap: 2rem;
+    background: linear-gradient(white , white,rgb(107, 104, 104));
+}
+.imagens:hover{
+    transform: scale(102%);
+    box-shadow: -15px -15px 20px #000;
+    transition: 1.2s;
+}
+.imagens img:hover{
+    opacity: 0.7;
+    transition: 1.2s;
+}
+
+.Portfolio div{
+    display: inline-block;
+    font-size: 20px;
+    border: 5px solid black;
+    border-radius: 1px;
+    right: 0;    
+}
+.imagens{
+    cursor: pointer;
+    width: 30%;
+    font-size: 0;
+    line-height: 0;
+}
+.imagens img{
+    width: 100%;
+}
+.Nome-destaque{
+    border-top: 5px solid black;
+    border-radius: 1px;
+    text-align: center;
+    font-weight: bold;
+    background: rgb(107, 104, 104);
+    color: white;
+    text-transform: uppercase;
+    padding: 3px;
+    line-height: 15px;
+}
+/*aba de trabalhos já feito*/
+.trabalhos{
+    padding: 40px 0;
+    background: rgb(107, 104, 104);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.imagem-trabalhos{
+    width: 30%;
+    height: 40%;
+    font-size: 0;
+    line-height: 0;
+    gap: 2px;
+}
+.imagem-trabalhos:hover{
+    transform: scale(105%);
+    transition: 1.3s;
+    box-shadow: -15px -15px 20px black;
+}
+.imagem-trabalhos img{
+    width: 100%;
+    cursor: pointer;
+}
+.imagem-trabalhos img:hover{
+    opacity: 0.3;
+    transition: 1.2s;
+}
+footer{
+    box-shadow: 0px 0px 20px rgb(66, 62, 62);
+    text-align: center;
+    background: rgb(66, 62, 62);
+    
+}
+footer p{
+    color: white;
+    font-size: 15px;
+    background: black;
+    padding: 20px;
+}
+/*Formularío de preenchimento*/
+form{
+    margin: 0 0 0 410px;
+}
+
+form label{
+    text-emphasis-color: #5e55ae;
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+form input, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.bordas{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 0;
+    border-color: #5e55ae;
+    
+}
+
+.enviar{
+    margin: 25px;
+    padding: 15px 0;
+    background: #5e55ae;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    border-style: double;
+    transition: 1s all;   
+    cursor: pointer; 
+}
+
+.enviar:hover{
+    background: #5e55ae;
+    transform: scale(1.1);
+}
+/*Parte da Modal, onde deve conter todas as informações dos criadores do site*/
+.X{
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    margin: 0 650px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    background: white;
+    top: 100px;
+}
+.X:active{
+    color: #5e55ae;
+}
+.X:hover{
+    color: #5e55ae;
+    border: 3px solid orange;
+    border-radius: 50%;
+    transition: 1s;
+}
+.modal-background{
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    top: -200%;
+    transition: 400ms;
+}
+
+.modal{
+    width: 50%;
+    height: 60%;
+    background: white;
+    margin: 120px auto 0 auto;
+    border: 3px solid orange;
+    border-radius: 5px;
+}
+.dados-pessoais{
+    width: 50%;
+    display: inline;
+}
+.dados-pessoais img{
+    width: 40%;
+    height: 87.7%;
+    border-right: 3px solid orange;
+    float: left;
+}
+.frase{
+    margin: 10px 0;
+}
+.dados-pessoais h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px 0;
+}
+
+.modal-texto{
+    border-bottom: 3px solid orange;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.dados-pessoais p{
+padding: 3px 0;
+}
+.dados-pessoais strong{
+    font-weight: bold;
+}
+.dados-pessoais em{
+    font-style: italic;
+}
+.modal-background2{
+    background: rgba(0, 0, 0, 0.70);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    top: -100%;
+    transition: 400ms;
+}
+.modal-video{
+    width: 50%;
+    height: 80%;
+    background: white;
+    margin: 80px auto 0 auto;
+    border: 3px solid orange;
+    border-radius: 5px;
+}
+.X2{
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    margin: 0 650px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    background: white;
+    top: 70px;
+}
+.X2:active{
+    color: #5e55ae;
+}
+.X2:hover{
+    color: #5e55ae;
+    border: 3px solid orange;
+    border-radius: 50%;
+    transition: 1s;
+}
+.videos{
+    margin:50px 90px 0;
+}
+.descriçao{
+    padding: 20px 0;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 18px;
+}
+.scroll{
+    transition: all .12s;
+}
+@media screen and (max-width: 480px) {
+    .bordas, .dados-pessoais, .descriçao, .frase, .lista-beneficios, .logo, .modal, .modal-background, .modal-background2, .modal-texto, .modal-video, .Nome-destaque, .Nome-Home, .Nome-Home2, .Nome-Home3, .Portfolio, .trabalhos, .videos, .X, .X2 {
+        width: auto;
+    }
+    .form, .form label, .form input, .form textarea, .enviar, .enviar:hover{
+        margin: 0 0 0 300px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios, .imagem-trabalhos, .imagens {
+        width: 100%;
+    }
+}
+

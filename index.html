@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>SQUAD15</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleHome.css">
+        <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="./imagens/logo branca 2.png" alt="Logo do squad"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li> <!--Página de inicio-->
+                        <li><a href="#trabalhos">Trabalhos</a></li> <!--Página com os nossos trabalhos-->
+                        <li><a href="#contatos">Contatos</a></li> <!--Página com os nossos contatos-->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main> 
+
+            <div class="sobre">
+                <section class="Nome-Home3">Sobre o SQUAD15</section>
+                <p class="texto">Dia 14 de maio foi criado o SQUAD15, para se ajudarmos e interagirmos entre nós alunos do Teu Futuro. Inicialmente eramos 5 participantes no squad, 2 deles não apareceram, conforme o tempo foi passando, acabamos ficando só nós 3, sempre nos ajudando.
+                    Agora recebemos essa oportunidade de fazer uma Landing Page. Nos reunimos e dividimos o que cada um fária, a seguir vocês verão o resultado.<strong>Agradecemos essa oportunidade!</strong></p>
+            </div>
+
+                <section class="Nome-Home"><a class="scroll" id="Home">Home</a></section>
+                <div class="Portfolio"> <!--Listas criadas para colocarmos as fotos e nomes-->
+                    <div class="imagens">
+                        <img src="./imagens/Matheus.jpg" alt="Avatarzinho do Matheus" onclick="abreDialog()"> <!--Aqui a imagem-->
+                        <p class="Nome-destaque">Matheus</p>
+                    </div>
+                    <div class="imagens">
+                        <img src="./imagens/Paola.jfif"  alt="Avatarzinho da Paola" onclick="abreDialog2()"> <!--Aqui a imagem-->
+                        <p class="Nome-destaque">Paola</p>
+                    </div>
+                    <div class="imagens">
+                        <img src="./imagens/Julio.jpg" alt="Avatarzinho do Julio" onclick="abreDialog3()"> <!--Aqui a imagem-->
+                        <p class="Nome-destaque">Julio</p>
+                    </div>
+                </div>
+                    <section class="Nome-Home2"><a class="scroll" id="trabalhos">Trabalhos</a></section>
+                    <div class="trabalhos">
+                            <div class="imagem-trabalhos">
+                                <img src="./imagens/Pong.jpg"  alt="Imagem do projeto Pong" onclick="abredialogvideo()" >
+                            </div>
+                            <div class="imagem-trabalhos">
+                                <img src="./imagens/freeway.jfif" alt="Imagem do projeto Freeway" onclick="abredialogvideo2()">
+                            </div>
+                            <div class="imagem-trabalhos">
+                                <img src="./imagens/BarbeariaAlura.jpg" alt="Imagem do site Barbearia Alura" onclick="abredialogvideo3()">
+                            </div>
+                    </div>
+
+                <div class="Nome-Home4">
+                    <section><a id="contatos">Contatos</a></section>
+                </div>
+                <form>           
+                    <label for="nomecompleto">Nome Completo</label>
+                    <input type="text" id="nomecompleto" class="bordas" required >
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="bordas" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="bordas" required placeholder="(XX) XXXXX-XXXX">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="120" rows="8" id="mensagem" class="bordas" required></textarea>
+
+                    <input type="submit" value="Enviar" class="enviar">
+                </form>
+        </main>
+
+        <footer>
+            <img src="./imagens/logo branca.png" alt="Logo do squad"> <!--Se o fundo for mais escuro utilizar a logo branca-->
+            <p>&copy;Copyright SQUAD 15 - 2021</p>
+        </footer>
+    </body>
+            <div class="modal-background" id="d1">
+                <div class="modal">
+                    <p onclick="fechaDialog()" class="X">X</p>
+                    <h2 class="modal-texto">currículo</h2>
+
+                    <div class="dados-pessoais">
+                        <img src="./imagens/Matheus-foto.jfif">
+                        <h3>Dados Pessoais</h3>
+                        <p><strong>Nome:</strong> Matheus de Almeida Muller</p>
+                        <p><strong>Data de Nascimento:</strong>15/11/2002</p>
+                        <p><strong>Cidade:</strong>Caxias do Sul</p>
+                        <p><strong>Telefone:</strong>(54)98158-2900</p>
+                        <p><strong>Email:</strong>matheus.muller41@gmail.com</p>
+                        <h3>Redes Socíais</h3>
+                        <p><strong>Github:</strong>mateusun1_</p>
+                        <p><strong>Linkedin:</strong>Matheus de Almeida</p>
+                        <p><strong>Instagram:</strong> mateusun_</p>
+                        <p class="frase"><em>"Não é a linguagem de programação que define o programador, mas sim sua lógica."</em>
+                            <br>-David Ribeiro Guilherme</p>
+                    </div>
+                </div>
+
+            <div class="modal-background" id="d2">
+                <div class="modal">
+                    <p onclick="fechaDialog2()" class="X">X</p>
+                    <h2 class="modal-texto">currículo</h2>
+
+                    <div class="dados-pessoais">
+                        <img src="./imagens/Paola-foto.jfif" >
+                        <h3>Dados Pessoais</h3>
+                        <p><strong>Nome:</strong> Kesia Paola Facchi</p> 
+                        <p><strong>Data de Nascimento:</strong>10/05/2004</p> 
+                        <p><strong>Cidade:</strong>Caxias do Sul</p>
+                        <p><strong>Telefone:</strong>(54)99645-4109</p>
+                        <p><strong>Email:</strong>kesiafacchin@gmail.com</p>
+                        <h3>Redes Sociais</h3>
+                        <p><strong>Instagram:</strong> paola_facchin</p> 
+                        <p><strong>Linkedin:</strong> paolafacchin</p>
+                        <p class="frase"><em>"Programar é uma arte e como toda arte começamos a enxergar a beleza onde não havia."</em> <br>-Autor desconhecido</p>
+                    </div>
+                </div>
+            <div class="modal-background" id="d3">
+                <div class="modal">
+                    <p onclick="fechaDialog3()" class="X">X</p>
+                    <h2 class="modal-texto">currículo</h2>
+
+                    <div class="dados-pessoais">
+                        <img src="./imagens/julio foto.jpg" class="fotos">
+                        <h3>Dados Pessoais</h3>
+                        <p><strong>Nome:</strong> Julio Boeno Dal Zotto</p>
+                        <p><strong>Data de Nascimento:</strong>12/08/2002</p>
+                        <p><strong>Cidade:</strong>Porto Alegre</p>
+                        <p><strong>Telefone:</strong>(51)99181-9026</p>
+                        <p><strong>Email:</strong>juliobdalzotto@gmail.com</p>
+                        <h3>Redes Socíais</h3>
+                        <p><strong>Instagram:</strong>juliobdz</p>
+                        <p><strong>Twitter:</strong>Juliobdz</p>
+                        <p><strong>Github:</strong>Juliodalzotto</p>
+                        <p><strong>Linkedin:</strong>Julio Boeno Dal Zotto</p>
+                        <p class="frase"><em>"Eu acredito que às vezes são as pessoas que ninguém espera nada que fazem as coisas que ninguém consegue imaginar."</em> <br>-Alan Turing</p>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
+
+            <div class="modal-background2" id="v1">
+                <div class="modal-video">
+                    <p onclick="fechadialogvideo()" class="X2">X</p>
+
+                    <div class="videos">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/LUEd6Ha3wZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="descriçao">Pong é o primeiro videogame lucrativo da história, dando origem a um novo setor da indústria. Foi de importância fundamental na história do videogame. Foi criado por Nolan Bushnell e Ted Dabney na forma de um console ligado a um monitor, movido a moedas.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-background2" id="v2">
+                <div class="modal-video">
+                    <p onclick="fechadialogvideo2()" class="X2">X</p>
+
+                    <div class="videos">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/gim925W7tkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="descriçao">Em Freeway, o jogador controlava uma galinha que deveria atravessar uma rodovia cheia de automóveis e de caminhões, com mais de seis pistas. Um jogo simples lançado para o Atari 2600 em 1981.</p>
+                    </div>                
+                </div>
+            </div>
+            <div class="modal-background2" id="v3">
+                <div class="modal-video">
+                    <p onclick="fechadialogvideo3()" class="X2">X</p>
+
+                    <div class="videos">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/xgAdMhhoGOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="descriçao">Localizada no coração da cidade a Barbearia Alura traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia. Criado pelo professor Pedro Martins na aula da Alura.</p>
+                    </div>                
+                </div>
+            </div>
+            <script src="dialogs.js"></script>
+</html>
